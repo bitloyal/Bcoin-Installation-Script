@@ -9,7 +9,7 @@
 Install Bcoin on Debian or Ubuntu in one command by using my script.
 
 ```
-$ wget --quiet -O - https://raw.githubusercontent.com/mjenglish/Bcoin-Installation-Script/master/bcoin.sh | sudo -E bash -
+$ wget --quiet -O - https://raw.githubusercontent.com/mjenglish/Bcoin-Installation-Script/master/install-bcoin.sh | sudo bash -
 ```
 
 ### Next Steps
