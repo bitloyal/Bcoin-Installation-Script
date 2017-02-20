@@ -12,8 +12,8 @@ BCOIN_VERSION=v1.0.0-beta
 
 # Add Node.js repository
 wget -O - https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
-echo "deb http://deb.nodesource.com/$NODE_VERSION $DISTRO main" | tee /etc/apt/sources.list.d/nodesource.list
-echo "deb-src http://deb.nodesource.com/$NODE_VERSION $DISTRO main" | tee -a /etc/apt/sources.list.d/nodesource.list
+echo "deb http://deb.nodesource.com/$NODE_VERSION $DISTRO main" > /etc/apt/sources.list.d/nodesource.list
+echo "deb-src http://deb.nodesource.com/$NODE_VERSION $DISTRO main" >> /etc/apt/sources.list.d/nodesource.list
 
 # Install Node.js and Git
 apt update
