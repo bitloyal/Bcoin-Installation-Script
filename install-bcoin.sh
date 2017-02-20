@@ -5,9 +5,9 @@
 # Run as root:
 # sudo bash install-bcoin.sh
 
-DISTRO="$(lsb_release -s -c)"
+DISTRO="$(lsb_release -sc)"
 NODE_VERSION=node_6.x
-BCOIN_REPO=git://github.com/bcoin-org/bcoin.git
+BCOIN_REPO=https://github.com/bcoin-org/bcoin.git
 BCOIN_VERSION=v1.0.0-beta
 
 # Add Node.js repository
@@ -25,7 +25,7 @@ cd bcoin
 git checkout $BCOIN_VERSION
 
 # Install Bcoin globally
-npm install -g
+npm install -g --production
 
 # Clean up
 cd ..
