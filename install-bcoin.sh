@@ -16,8 +16,8 @@ echo "deb http://deb.nodesource.com/$NODE_VERSION $DISTRO main" > /etc/apt/sourc
 echo "deb-src http://deb.nodesource.com/$NODE_VERSION $DISTRO main" >> /etc/apt/sources.list.d/nodesource.list
 
 # Install Node.js and Git
-apt update
-apt install -y nodejs build-essential git
+apt-get update
+apt-get install -y nodejs build-essential git
 
 # Download Bcoin
 git clone $BCOIN_REPO
