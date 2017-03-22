@@ -8,7 +8,7 @@
 DISTRO="$(lsb_release -sc)"
 NODE_VERSION=node_6.x
 BCOIN_REPO=https://github.com/bcoin-org/bcoin.git
-BCOIN_VERSION=v1.0.0-beta
+BCOIN_VERSION=v1.0.0-beta.10
 
 # Add Node.js repository
 wget -O - https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
